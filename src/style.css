@@ -1,0 +1,35 @@
+.BlueButton {
+    background-color: #0d6efd;
+    border-style: none;
+    color: antiquewhite;
+}
+
+.CountryList{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lialigncenter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.module8Challenge{
+    background-color: lightblue;
+    border-style:ridge;
+    color: black;
+    font-weight: bold;
+}
+
+.PageBackground{
+    background-color: darkgray;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
