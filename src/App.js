@@ -23,6 +23,14 @@ import Login from './Login';
 import EditRegistration from './EditRegitration';
 import Movies from './Movies';
 
+import AboutUs from './Components/AboutUs';
+import ContactUs from './Components/ContactUs';
+import Footer from './Components/Footer';
+import Masthead from './Components/Masthead';
+import NavBar from './Components/NavBar';
+import Projects from './Components/Projects';
+import Signup from './Components/Signup';
+import Facts from './Components/Facts';
 
 const price = 2000;
 const tax = price * 0.10;
@@ -178,7 +186,7 @@ function App() {
   }
 
 useEffect(()=> {
-  document.title = `you clicked ${count} times`
+  document.title = `Astronomical Facts!`
 },[count])
 
 const handleClick = (e) => {
@@ -195,7 +203,7 @@ const userData = JSON.parse(sessionStorage.getItem("userName"))
   return (
     <div>
       {/* <UserContext.Provider value= {date.toLocaleTimeString()}> */}
-      <UserContext.Provider value= {userInfo? "Welcome " + userInfo : "The time now is: " + date.toLocaleTimeString()}>
+      {/* <UserContext.Provider value= {userInfo? "Welcome " + userInfo : "The time now is: " + date.toLocaleTimeString()}>
       <Navigationbar/>
 
       <Routes>
@@ -216,15 +224,24 @@ const userData = JSON.parse(sessionStorage.getItem("userName"))
           <Route path='/dashboard' element={<Admin/>}/>
         </Route>
       </Routes>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
+
+<NavBar/>
+<Masthead/>
+<AboutUs/>
+<Projects/>
+<Facts/>
+<Signup/>
+<ContactUs/>
+<Footer/>
     </div>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo"/>
-    //     <p>You clicked {count} times</p>
-    //     <button type="submit" onClick={handleClick}>CLICK ME!</button>
-    //   </header>
-    // </div>
+    //  <div className="App">
+    //    <header className="App-header">
+    //      <img src={logo} className="App-logo" alt="logo"/>
+    //      <p>You clicked {count} times</p>
+    //      <button type="submit" onClick={handleClick}>CLICK ME!</button>
+    //    </header>
+    //  </div>
   );
 }
 
